@@ -1,0 +1,132 @@
+/*global style*/
+body{
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color:#f4f4f4;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* header*/
+
+.decor{
+    color: #3a41a0;
+    font-weight: bold;
+}
+
+header{
+    background-color: dimgrey;
+    color: #f4f4f4;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #3a41a0 5px solid;
+}
+header a{
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #brand{
+    float: left;
+}
+header #brand h1{
+    margin:0;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+ header a:hover{
+     color: #3a41a0;
+     font-weight: bold;
+ }
+ /* show case or main*/
+ #show{
+     width: 100%;
+     min-height: 400px;
+     background-image: url('../images/looking_up_financial_district-wallpaper-1920x1080.jpg');
+     color:#ffff;
+     text-align: center;
+ }
+ #show h1{
+     margin-top: 70px;
+     font-size:40px;
+ } 
+ #show p{
+     font-size: 20px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ /* news and login*/
+ #news{
+     padding: 15px;
+     color: #f4f4f4;
+     background: #3a41a0;
+ }
+ #news h1{
+     float: left;
+ }
+ #news form{
+     float: right;
+     margin-top:1px;
+ }
+ #news input{
+     margin-top: 1px;
+     box-sizing: border-box;
+     padding:5px;
+     width: 250px;
+     border: 0;
+     border-radius: 5px;
+ }
+ .submit{
+     width: 250px;
+     color:#f4f4f4;
+     background-color: dimgrey;
+     border: 0;
+     border-radius: 5px;
+     height: 20px;
+     margin-top: 5px;
+ }
+ #boxes{
+     background-color: dimgrey;
+ }
+ #boxes .box{
+     float: left;
+     width: 30%;
+     text-align: center; 
+     padding: 10px;
+     color: #f4f4f4;
+     
+ }
+ footer{
+     padding: 20px;
+     text-align: center;
+ }
+ @media(max-width:768px){
+     header #brand, header nav, header nav li,#news form, #news button,#news h1,#boxes .box{
+         float: none;
+         text-align: center;
+         width: 100%;
+     }
+     header{
+         padding-bottom: 20px;
+     }     
+ }
